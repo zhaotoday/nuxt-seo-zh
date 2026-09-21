@@ -53,11 +53,11 @@ const healthBadge = computed(() => {
 
 const tabs = computed<TabsItem[]>(() => {
   const items: TabsItem[] = [
-    { label: 'Modules', value: 'modules', icon: 'i-carbon-grid' },
+    { label: '模块', value: 'modules', icon: 'i-carbon-grid' },
   ]
   if (evaluated.value && summary.value.total > 0) {
     items.push({
-      label: 'Setup',
+      label: '设置',
       value: 'setup',
       icon: 'i-carbon-task-complete',
       badge: healthBadge.value,
@@ -134,8 +134,8 @@ function handleModuleClick(mod: typeof moduleCatalog.value[0]) {
                   :required-pending="getModuleResultByName(mod.name)!.requiredPending"
                   :recommended-pending="getModuleResultByName(mod.name)!.recommendedPending"
                 />
-                <span v-else-if="mod.name === currentModule" class="splash-current-badge">Current</span>
-                <span v-else-if="!mod.installed" class="splash-not-installed">{{ selectedForInstall.has(mod.name) ? 'Selected' : 'Not installed' }}</span>
+                <span v-else-if="mod.name === currentModule" class="splash-current-badge">当前</span>
+                <span v-else-if="!mod.installed" class="splash-not-installed">{{ selectedForInstall.has(mod.name) ? '已选择' : '未安装' }}</span>
               </button>
             </div>
 
@@ -147,7 +147,7 @@ function handleModuleClick(mod: typeof moduleCatalog.value[0]) {
                 </div>
                 <button type="button" class="splash-install-copy" @click="copy()">
                   <UIcon :name="copied ? 'carbon:checkmark' : 'carbon:copy'" class="w-3.5 h-3.5" />
-                  {{ copied ? 'Copied' : 'Copy' }}
+                  {{ copied ? '已复制' : '复制' }}
                 </button>
               </div>
             </Transition>
@@ -163,7 +163,7 @@ function handleModuleClick(mod: typeof moduleCatalog.value[0]) {
                   :style="{ width: `${summary.total > 0 ? (summary.passed / summary.total) * 100 : 0}%` }"
                 />
               </span>
-              <span class="splash-health-count">{{ summary.passed }}/{{ summary.total }} complete</span>
+              <span class="splash-health-count">{{ summary.passed }}/{{ summary.total }} 已完成</span>
             </div>
             <DevtoolsSetupChecklist :current-module="currentModule" />
           </div>
@@ -174,11 +174,11 @@ function handleModuleClick(mod: typeof moduleCatalog.value[0]) {
               <UIcon name="i-carbon-chart-line-data" class="w-4 h-4 text-violet-500" />
               <div>
                 <span class="splash-pro-ad-title">Nuxt SEO Pro</span>
-                <span class="splash-pro-ad-desc">GSC analytics, indexing diagnostics, competitor tracking &amp; MCP server</span>
+                <span class="splash-pro-ad-desc">GSC 分析、索引诊断、竞品追踪和 MCP 服务器</span>
               </div>
             </div>
             <span class="splash-pro-ad-cta">
-              Learn more
+              了解更多
               <UIcon name="carbon:arrow-right" class="w-3 h-3" />
             </span>
           </a>

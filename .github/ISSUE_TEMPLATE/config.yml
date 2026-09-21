@@ -1,7 +1,7 @@
 contact_links:
-  - name: 📖 Documentation
+  - name: 📖 文档
     url: https://nuxtseo.com
-    about: Check the documentation for guides and examples.
-  - name: 💬 Harlan's Discord Server
+    about: 查看文档中的指南和示例。
+  - name: 💬 Harlan 的 Discord 服务器
     url: https://discord.com/invite/5jDAMswWwX
-    about: Join the friendly discord server for help with your issue.
+    about: 加入友好的 Discord 服务器，获取问题帮助。

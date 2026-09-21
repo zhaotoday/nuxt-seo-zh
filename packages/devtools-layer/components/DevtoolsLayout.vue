@@ -117,7 +117,7 @@ function disconnectStandalone() {
           <div class="flex items-center gap-3 sm:gap-4">
             <button
               type="button"
-              aria-label="Nuxt SEO Modules"
+              aria-label="Nuxt SEO 模块"
               class="flex items-center opacity-90 hover:opacity-100 transition-opacity cursor-pointer"
               @click="showModuleSplash = !showModuleSplash"
             >
@@ -145,7 +145,7 @@ function disconnectStandalone() {
                 />
                 <UIcon name="carbon:chevron-down" class="w-3 h-3 opacity-50 transition-transform" :class="showModuleSplash ? 'rotate-180' : ''" />
               </button>
-              <UTooltip v-if="version" :text="hasUpdate ? `Update available: v${latestVersion}` : `v${version}`">
+              <UTooltip v-if="version" :text="hasUpdate ? `有可用更新：v${latestVersion}` : `v${version}`">
                 <a
                   :href="hasUpdate && npmPackage ? `https://npmjs.com/package/${npmPackage}` : undefined"
                   :target="hasUpdate ? '_blank' : undefined"
@@ -166,7 +166,7 @@ function disconnectStandalone() {
               <div v-if="isConnected || isStandalone" ref="modeDropdownRef" class="mode-dropdown-wrapper">
                 <button type="button" class="devtools-mode-btn" @click="modeDropdownOpen = !modeDropdownOpen">
                   <UIcon :name="isProductionMode ? 'carbon:cloud' : 'carbon:laptop'" class="w-3.5 h-3.5" />
-                  <span class="hidden sm:inline">{{ isProductionMode ? 'Production' : 'Local' }}</span>
+                  <span class="hidden sm:inline">{{ isProductionMode ? '生产环境' : '本地' }}</span>
                   <span v-if="isProductionMode" class="devtools-production-badge">
                     <span class="devtools-production-dot" />
                     {{ productionHostname }}
@@ -181,7 +181,7 @@ function disconnectStandalone() {
                   <div v-if="modeDropdownOpen" class="mode-dropdown-menu">
                     <button type="button" class="mode-dropdown-item" :class="!isProductionMode ? 'is-active' : ''" @click="selectMode('local')">
                       <UIcon name="carbon:laptop" class="w-4 h-4" />
-                      <span>Local</span>
+                      <span>本地</span>
                       <UIcon v-if="!isProductionMode" name="carbon:checkmark" class="w-3.5 h-3.5 ml-auto text-[var(--seo-green)]" />
                     </button>
                     <button
@@ -192,12 +192,12 @@ function disconnectStandalone() {
                       @click="hasProductionUrl && selectMode('production')"
                     >
                       <UIcon name="carbon:cloud" class="w-4 h-4" />
-                      <span>Production</span>
+                      <span>生产环境</span>
                       <span v-if="hasProductionUrl" class="devtools-production-badge text-[10px]">
                         <span class="devtools-production-dot" />
                         {{ productionHostname }}
                       </span>
-                      <span v-else class="text-[10px] opacity-60 ml-auto">Set site url</span>
+                      <span v-else class="text-[10px] opacity-60 ml-auto">设置站点 URL</span>
                       <UIcon v-if="isProductionMode" name="carbon:checkmark" class="w-3.5 h-3.5 ml-1 text-[var(--seo-green)]" />
                     </button>
                     <!-- Remote connection context: shown when reading from a standalone dev server -->
@@ -209,7 +209,7 @@ function disconnectStandalone() {
                       </div>
                       <button type="button" class="mode-dropdown-item" @click="disconnectStandalone(); modeDropdownOpen = false">
                         <UIcon name="carbon:logout" class="w-4 h-4" />
-                        <span>Disconnect</span>
+                        <span>断开连接</span>
                       </button>
                     </template>
                   </div>
@@ -302,7 +302,7 @@ function disconnectStandalone() {
       <div v-if="isStandalone" class="standalone-path-bar">
         <div class="standalone-path-inner">
           <UIcon name="carbon:document" class="w-3.5 h-3.5 text-[var(--color-text-muted)]" />
-          <span class="text-xs text-[var(--color-text-muted)]">Path:</span>
+          <span class="text-xs text-[var(--color-text-muted)]">路径：</span>
           <input
             :value="path"
             type="text"

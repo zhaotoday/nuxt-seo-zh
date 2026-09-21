@@ -1,7 +1,7 @@
 <script setup lang="ts">
 useSeoMeta({
-  title: 'Home',
-  description: 'Welcome to the home page.',
+  title: '首页',
+  description: '欢迎来到首页。',
 })
 
 defineOgImage('NuxtSeo')
@@ -9,7 +9,7 @@ defineOgImage('NuxtSeo')
 
 <template>
   <div>
-    <h1>Home</h1>
-    <p>An example Nuxt app with @nuxtjs/seo installed.</p>
+    <h1>首页</h1>
+    <p>这是一个安装了 @nuxtjs/seo 的 Nuxt 示例应用。</p>
   </div>
 </template>

@@ -1,5 +1,5 @@
-name: 🐛 Bug report
-description: Something's not working
+name: 🐛 缺陷报告
+description: 有东西不工作
 title: 'fix: '
 labels: [bug]
 body:
@@ -7,25 +7,25 @@ body:
     validations:
       required: true
     attributes:
-      label: 🐛 The bug
-      description: What isn't working? Describe what the bug is.
+      label: 🐛 缺陷
+      description: 什么不工作？描述这个缺陷是什么。
   - type: input
     validations:
       required: true
     attributes:
-      label: 🛠️ To reproduce
+      label: 🛠️ 如何复现
       description: |
-        A reproduction of the bug. Please create a StackBlitz reproduction from one of the starters:
-        - [Basic](https://stackblitz.com/github/harlan-zw/nuxt-seo/tree/main/examples/basic)
+        这个缺陷的复现。请用以下起步项目之一创建 StackBlitz 复现：
+        - [基础](https://stackblitz.com/github/harlan-zw/nuxt-seo/tree/main/examples/basic)
         - [i18n](https://stackblitz.com/github/harlan-zw/nuxt-seo/tree/main/examples/i18n)
       placeholder: https://stackblitz.com/[...]
   - type: textarea
     validations:
       required: true
     attributes:
-      label: 🌈 Expected behavior
-      description: What did you expect to happen? Is there a section in the docs about this?
+      label: 🌈 期望行为
+      description: 你期望发生什么？文档里有相关章节吗？
   - type: textarea
     attributes:
-      label: ℹ️ Additional context
-      description: Add any other context about the problem here.
+      label: ℹ️ 补充上下文
+      description: 在这里补充关于该问题的其他上下文。

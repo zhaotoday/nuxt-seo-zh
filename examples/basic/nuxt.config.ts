@@ -3,9 +3,9 @@ export default defineNuxtConfig({
 
   site: {
     url: 'https://example.com',
-    name: 'Awesome Site',
-    description: 'Welcome to my awesome site.',
-    defaultLocale: 'en',
+    name: '精彩站点',
+    description: '欢迎来到我的精彩站点。',
+    defaultLocale: 'zh',
   },
 
   compatibilityDate: '2024-08-07',

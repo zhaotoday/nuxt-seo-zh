@@ -2,7 +2,7 @@
   "name": "nuxtseo-layer-devtools",
   "type": "module",
   "version": "5.3.16",
-  "description": "Shared Nuxt layer for Nuxt SEO devtools clients.",
+  "description": "供 Nuxt SEO DevTools 客户端使用的共享 Nuxt 层。",
   "author": {
     "name": "Harlan Wilton",
     "email": "harlan@harlanzw.com",

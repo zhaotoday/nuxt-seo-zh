@@ -9,10 +9,10 @@ const { copy, copied } = useCopy()
 </script>
 
 <template>
-  <UTooltip :text="copied ? 'Copied!' : 'Copy'">
+  <UTooltip :text="copied ? '已复制！' : '复制'">
     <UButton
       :icon="copied ? 'carbon:checkmark' : 'carbon:copy'"
-      :aria-label="copied ? 'Copied' : 'Copy to clipboard'"
+      :aria-label="copied ? '已复制' : '复制到剪贴板'"
       :class="copied ? 'text-[var(--seo-green)]' : ''"
       @click="copy(text)"
     />

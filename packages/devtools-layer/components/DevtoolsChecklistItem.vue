@@ -24,7 +24,7 @@ const { item } = defineProps<{
           variant="subtle"
           class="checklist-item-level"
         >
-          {{ item.level === 'required' ? 'Required' : 'Tip' }}
+          {{ item.level === 'required' ? '必需' : '建议' }}
         </UBadge>
       </div>
       <div class="checklist-item-description">

@@ -30,7 +30,7 @@ defineEmits<{
         <UButton
           v-if="closable"
           icon="carbon:close"
-          aria-label="Close panel"
+          aria-label="关闭面板"
           @click="$emit('close')"
         />
       </div>

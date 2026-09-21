@@ -1,36 +1,36 @@
 # Nuxt SEO
 
-Monorepo for `@nuxtjs/seo`, a meta module that installs and configures all Nuxt SEO modules.
+`@nuxtjs/seo` 的 monorepo。这是一个元模块，会安装并配置全部 Nuxt SEO 模块。
 
-## Nuxt SEO Modules
+## Nuxt SEO 模块
 
-All module repos live in `~/pkg`. The `@nuxtjs/seo` module bundles these:
+所有模块仓库位于 `~/pkg`。`@nuxtjs/seo` 模块会捆绑这些：
 
-| Module               | Package | Path |
+| 模块 | 包名 | 路径 |
 |----------------------|---|---|
-| Robots               | `@nuxtjs/robots` | `~/pkg/nuxt-robots` |
-| Sitemap              | `@nuxtjs/sitemap` | `~/pkg/sitemap` |
-| OG Image             | `nuxt-og-image` | `~/pkg/og-image` |
-| Schema.org           | `nuxt-schema-org` | `~/pkg/nuxt-schema-org` |
-| SEO Utils            | `nuxt-seo-utils` | `~/pkg/nuxt-seo-utils` |
-| Link Checker         | `nuxt-link-checker` | `~/pkg/nuxt-link-checker` |
-| Site Config          | `nuxt-site-config` | `~/pkg/nuxt-site-config` |
+| Robots | `@nuxtjs/robots` | `~/pkg/nuxt-robots` |
+| Sitemap | `@nuxtjs/sitemap` | `~/pkg/sitemap` |
+| OG Image | `nuxt-og-image` | `~/pkg/og-image` |
+| Schema.org | `nuxt-schema-org` | `~/pkg/nuxt-schema-org` |
+| SEO Utils | `nuxt-seo-utils` | `~/pkg/nuxt-seo-utils` |
+| Link Checker | `nuxt-link-checker` | `~/pkg/nuxt-link-checker` |
+| Site Config | `nuxt-site-config` | `~/pkg/nuxt-site-config` |
 
-### Standalone Modules
+### 独立模块
 
-These modules are not bundled in `@nuxtjs/seo` but are available for installation separately.
+这些模块不会捆绑进 `@nuxtjs/seo`，但可以单独安装。
 
-| Module               | Package | Path |
+| 模块 | 包名 | 路径 |
 |----------------------|---|---|
 | Skew Protection | `nuxt-skew-protection` | `~/pkg/nuxt-skew-protection` |
-| AI Ready        | `nuxt-ai-ready` | `~/pkg/nuxt-ai-ready` |
+| AI Ready | `nuxt-ai-ready` | `~/pkg/nuxt-ai-ready` |
 
-## Website
+## 网站
 
-The nuxtseo.com website source lives at `~/sites/nuxtseo.com`. It is a Nuxt app deployed to Cloudflare Workers with D1 databases. The `nuxt-seo-pro` layer (`layers/nuxt-seo-pro/`) contains the Pro dashboard, telemetry API, and license verification endpoints.
+nuxtseo.com 网站源码位于 `~/sites/nuxtseo.com`。这是一个部署到 Cloudflare Workers 并使用 D1 数据库的 Nuxt 应用。`nuxt-seo-pro` 层（`layers/nuxt-seo-pro/`）包含 Pro 控制台、遥测 API 和许可证校验端点。
 
 
 <!-- skilld -->
-Before modifying code, evaluate each installed skill against the current task.
-For each skill, determine YES/NO relevance and invoke all YES skills before proceeding.
+修改代码前，先评估每个已安装 skill 与当前任务的相关性。
+对每个 skill 判断 YES/NO，并在继续之前调用所有 YES 的 skill。
 <!-- /skilld -->

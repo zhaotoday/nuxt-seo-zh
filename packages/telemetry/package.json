@@ -3,7 +3,7 @@
   "type": "module",
   "version": "5.3.16",
   "private": true,
-  "description": "Optional anonymous telemetry for Nuxt SEO modules.",
+  "description": "Nuxt SEO 模块的可选匿名遥测。",
   "author": {
     "name": "Harlan Wilton",
     "email": "harlan@harlanzw.com",

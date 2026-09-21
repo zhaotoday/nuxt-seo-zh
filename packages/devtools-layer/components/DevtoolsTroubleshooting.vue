@@ -29,7 +29,7 @@ const githubNewIssueUrl = computed(() => {
 // Build environment info for copy
 const envInfo = computed(() => {
   const lines: string[] = []
-  lines.push('### Environment')
+  lines.push('### 环境')
   lines.push('')
 
   // Current module
@@ -42,7 +42,7 @@ const envInfo = computed(() => {
       continue
     const catalogEntry = moduleCatalog.value.find(m => m.name === mod.name)
     if (catalogEntry?.npm)
-      lines.push(`- **${catalogEntry.npm}**: installed`)
+      lines.push(`- **${catalogEntry.npm}**: 已安装`)
   }
 
   lines.push('')
@@ -60,8 +60,8 @@ const steps = computed(() => {
   return [
     {
       icon: 'carbon:reset',
-      title: 'Clear generated files and update dependencies',
-      description: 'Delete your .nuxt directory, update packages, then restart.',
+      title: '清除生成文件并更新依赖',
+      description: '删除 .nuxt 目录，更新包，然后重启。',
       codes: [
         `rm -rf .nuxt && ${pm.exec} nuxt dev`,
         updateCmd,
@@ -69,20 +69,20 @@ const steps = computed(() => {
     },
     {
       icon: 'carbon:debug',
-      title: 'Enable debug mode',
-      description: 'Add debug: true to your module config for verbose logging.',
+      title: '启用调试模式',
+      description: '在模块配置中加入 debug: true，以获得详细日志。',
       codes: [],
     },
     {
       icon: 'carbon:code',
-      title: 'Create a minimal reproduction',
-      description: 'Use a StackBlitz playground to isolate the issue. This helps maintainers debug quickly.',
+      title: '创建最小复现',
+      description: '使用 StackBlitz 演练场隔离问题。这能帮助维护者更快调试。',
       codes: [],
     },
     {
       icon: 'carbon:flag',
-      title: 'Report the issue',
-      description: 'Open a GitHub issue with your reproduction link and environment info.',
+      title: '报告问题',
+      description: '打开 GitHub issue，附上复现链接和环境信息。',
       codes: [],
     },
   ]
@@ -90,7 +90,7 @@ const steps = computed(() => {
 </script>
 
 <template>
-  <DevtoolsSection icon="carbon:help" text="Troubleshooting" description="Steps to diagnose and report issues">
+  <DevtoolsSection icon="carbon:help" text="故障排查" description="诊断和报告问题的步骤">
     <div class="troubleshoot-steps">
       <div v-for="(step, i) of steps" :key="i" class="troubleshoot-step">
         <div class="troubleshoot-step-num">
@@ -113,7 +113,7 @@ const steps = computed(() => {
     <div class="troubleshoot-section">
       <div class="troubleshoot-section-label">
         <UIcon name="carbon:game-console" class="w-3.5 h-3.5" />
-        Playgrounds for reproduction
+        用于复现的演练场
       </div>
       <DevtoolsPlaygrounds :module-name="moduleName" />
     </div>
@@ -123,11 +123,11 @@ const steps = computed(() => {
       <div class="troubleshoot-section-header">
         <div class="troubleshoot-section-label">
           <UIcon name="carbon:information" class="w-3.5 h-3.5" />
-          Environment info
+          环境信息
         </div>
         <button type="button" class="troubleshoot-copy-btn" @click="copyEnv()">
           <UIcon :name="envCopied ? 'carbon:checkmark' : 'carbon:copy'" class="w-3 h-3" />
-          {{ envCopied ? 'Copied' : 'Copy for issue' }}
+          {{ envCopied ? '已复制' : '复制到 issue' }}
         </button>
       </div>
       <div class="troubleshoot-env">
@@ -136,14 +136,14 @@ const steps = computed(() => {
           <span class="troubleshoot-env-value">
             v{{ version || 'unknown' }}
             <UBadge v-if="hasUpdate" size="xs" color="warning" variant="subtle">
-              v{{ latestVersion }} available
+              v{{ latestVersion }} 可用
             </UBadge>
           </span>
         </div>
         <template v-for="mod of installedModules" :key="mod.name">
           <div v-if="mod.name !== moduleName" class="troubleshoot-env-row">
             <span class="troubleshoot-env-label">{{ moduleCatalog.find(m => m.name === mod.name)?.npm || mod.name }}</span>
-            <span class="troubleshoot-env-value">installed</span>
+            <span class="troubleshoot-env-value">已安装</span>
           </div>
         </template>
         <div class="troubleshoot-env-row">
@@ -166,7 +166,7 @@ const steps = computed(() => {
       class="troubleshoot-report-btn"
     >
       <UIcon name="simple-icons:github" class="w-3.5 h-3.5" />
-      Open an issue on GitHub
+      在 GitHub 上打开 issue
       <UIcon name="carbon:arrow-up-right" class="w-3 h-3 opacity-40 ml-auto" />
     </a>
   </DevtoolsSection>

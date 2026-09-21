@@ -9,13 +9,13 @@ const { error } = defineProps<{
 <template>
   <DevtoolsError
     icon="carbon:cloud-offline"
-    title="Production site unreachable"
+    title="无法访问生产站点"
     :error="error"
   >
     <template v-if="!error">
       <p class="text-xs text-[var(--color-text-muted)] max-w-xs leading-relaxed">
-        Could not connect to <code class="prod-url">{{ productionUrl }}</code>.
-        Check that the site is deployed and accessible.
+        无法连接到 <code class="prod-url">{{ productionUrl }}</code>。
+        请检查站点是否已部署且可访问。
       </p>
     </template>
     <UButton
@@ -24,7 +24,7 @@ const { error } = defineProps<{
       icon="carbon:laptop"
       @click="previewSource = 'local'"
     >
-      Switch to local
+      切换到本地
     </UButton>
   </DevtoolsError>
 </template>

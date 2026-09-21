@@ -1,10 +1,10 @@
-# Basic Example
+# 基础示例
 
-A minimal Nuxt app with [`@nuxtjs/seo`](https://nuxtseo.com) installed.
+一个安装了 [`@nuxtjs/seo`](https://nuxtseo.com) 的最简 Nuxt 应用。
 
-[Open in StackBlitz](https://stackblitz.com/github/harlan-zw/nuxt-seo/tree/main/examples/basic)
+[在 StackBlitz 中打开](https://stackblitz.com/github/harlan-zw/nuxt-seo/tree/main/examples/basic)
 
-## Setup
+## 设置
 
 ```bash
 pnpm install

@@ -1,5 +1,5 @@
-# Context
+# 上下文
 
-## Glossary
+## 术语表
 
-**Nitro runtime compatibility**: the shared build-time adapter in `nuxtseo-shared/kit` that selects Nitro 2 or Nitro 3 runtime imports and type augmentation targets for Nuxt SEO modules.
+**Nitro 运行时兼容性**：`nuxtseo-shared/kit` 中的共享构建时适配器，用于为 Nuxt SEO 模块选择 Nitro 2 或 Nitro 3 运行时导入以及类型增强目标。

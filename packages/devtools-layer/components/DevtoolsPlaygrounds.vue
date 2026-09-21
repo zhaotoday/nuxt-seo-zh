@@ -7,21 +7,21 @@ const { moduleName } = defineProps<{
 }>()
 
 const keyLabels: Record<string, string> = {
-  'basic': 'Basic',
+  'basic': '基础',
   'i18n': 'Nuxt I18n',
   'content': 'Nuxt Content',
-  'basic-satori': 'Basic (Satori)',
-  'basic-takumi': 'Basic (Takumi)',
-  'dynamic-urls': 'Dynamic URLs',
-  'custom-rules': 'Custom Rules',
-  'broken-links': 'Broken Links',
-  'skip-inspection': 'Skip Inspection',
-  'breadcrumbs': 'Breadcrumbs',
-  'meta-tags': 'Meta Tags',
-  'blog': 'Blog',
-  'e-commerce': 'E-Commerce',
-  'env-driven': 'Env Driven',
-  'multi-site': 'Multi Site',
+  'basic-satori': '基础（Satori）',
+  'basic-takumi': '基础（Takumi）',
+  'dynamic-urls': '动态 URL',
+  'custom-rules': '自定义规则',
+  'broken-links': '死链',
+  'skip-inspection': '跳过检查',
+  'breadcrumbs': '面包屑',
+  'meta-tags': 'Meta 标签',
+  'blog': '博客',
+  'e-commerce': '电商',
+  'env-driven': '环境驱动',
+  'multi-site': '多站点',
 }
 
 const CAMEL_RE = /([a-z])([A-Z])/g

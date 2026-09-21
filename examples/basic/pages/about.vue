@@ -1,13 +1,13 @@
 <script setup lang="ts">
 useSeoMeta({
-  title: 'About',
-  description: 'About this example.',
+  title: '关于',
+  description: '关于这个示例。',
 })
 </script>
 
 <template>
   <div>
-    <h1>About</h1>
-    <p>This is the about page.</p>
+    <h1>关于</h1>
+    <p>这是关于页面。</p>
   </div>
 </template>

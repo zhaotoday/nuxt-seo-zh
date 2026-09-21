@@ -1,9 +1,9 @@
-# Examples
+# 示例
 
-Starter projects you can open directly in [StackBlitz](https://stackblitz.com).
+你可以直接在 [StackBlitz](https://stackblitz.com) 中打开这些起步项目。
 
-| Example | Description | StackBlitz |
+| 示例 | 说明 | StackBlitz |
 |---|---|---|
-| [basic](./basic) | Minimal `@nuxtjs/seo` setup | [Open](https://stackblitz.com/github/harlan-zw/nuxt-seo/tree/main/examples/basic) |
-| [i18n](./i18n) | `@nuxtjs/seo` + `@nuxtjs/i18n` | [Open](https://stackblitz.com/github/harlan-zw/nuxt-seo/tree/main/examples/i18n) |
-| [content](./content) | `@nuxtjs/seo` + `@nuxt/content` (per-page SEO via frontmatter) | [Open](https://stackblitz.com/github/harlan-zw/nuxt-seo/tree/main/examples/content) |
+| [basic](./basic) | 最简 `@nuxtjs/seo` 设置 | [打开](https://stackblitz.com/github/harlan-zw/nuxt-seo/tree/main/examples/basic) |
+| [i18n](./i18n) | `@nuxtjs/seo` + `@nuxtjs/i18n` | [打开](https://stackblitz.com/github/harlan-zw/nuxt-seo/tree/main/examples/i18n) |
+| [content](./content) | `@nuxtjs/seo` + `@nuxt/content`（通过 frontmatter 做按页 SEO） | [打开](https://stackblitz.com/github/harlan-zw/nuxt-seo/tree/main/examples/content) |

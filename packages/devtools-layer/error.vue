@@ -27,12 +27,12 @@ function handleClear() {
         <UIcon name="carbon:warning" class="error-icon" />
       </div>
       <h1 class="error-title">
-        {{ error.statusCode || 'Error' }}: {{ error.message || 'Something went wrong' }}
+        {{ error.statusCode || '错误' }}: {{ error.message || '出了点问题' }}
       </h1>
       <pre v-if="stack" class="error-stack">{{ stack }}</pre>
       <div class="error-actions">
         <UButton size="sm" @click="handleClear">
-          Clear Error
+          清除错误
         </UButton>
       </div>
     </div>

@@ -1,13 +1,13 @@
-# SSR performance benchmark
+# SSR 性能基准测试
 
-This benchmark builds a production Nuxt app with the complete Nuxt SEO module stack. The stack includes `nuxt-ai-ready`, i18n, and skew protection. It measures:
+这个基准测试会构建一个包含完整 Nuxt SEO 模块栈的生产 Nuxt 应用。该技术栈包含 `nuxt-ai-ready`、i18n 和 skew protection。它会测量：
 
-- server CPU time per SSR render;
-- allocated V8 heap per SSR render;
-- CPU time and allocation for `robots.txt`, `sitemap.xml`, and `llms.txt`;
-- sampled CPU and heap profiles for SSR and the SEO endpoint workload.
+- 每次 SSR 渲染的服务端 CPU 时间；
+- 每次 SSR 渲染分配的 V8 堆；
+- `robots.txt`、`sitemap.xml` 和 `llms.txt` 的 CPU 时间与分配；
+- SSR 和 SEO 端点负载的采样 CPU 与堆分析。
 
-Run it locally:
+在本地运行：
 
 ```sh
 pnpm dev:prepare
@@ -15,13 +15,13 @@ pnpm benchmark:build
 pnpm benchmark
 ```
 
-The result is `bench/performance/result.json`. Profile artifacts are in `bench/performance/profiles/`:
+结果是 `bench/performance/result.json`。分析产物位于 `bench/performance/profiles/`：
 
-- `ssr-*` contains the SSR profile set;
-- `robots-*`, `sitemap-*`, and `ai-ready-*` contain separate endpoint profile sets;
-- each `*-profile-analysis.md` contains full and Nuxt SEO focused costs and caller paths;
-- each `*-profile-analysis.json` contains machine-readable self, inclusive, module, and path costs;
-- each `*-flamegraph.speedscope.json` opens at <https://www.speedscope.app/>;
-- each raw `.cpuprofile` and `.heapprofile` contains the V8 data.
+- `ssr-*` 包含 SSR 分析集；
+- `robots-*`、`sitemap-*` 和 `ai-ready-*` 包含各自端点的分析集；
+- 每个 `*-profile-analysis.md` 包含完整成本和聚焦 Nuxt SEO 的成本，以及调用路径；
+- 每个 `*-profile-analysis.json` 包含机器可读的 self、inclusive、module 和 path 成本；
+- 每个 `*-flamegraph.speedscope.json` 可在 <https://www.speedscope.app/> 打开；
+- 每个原始 `.cpuprofile` 和 `.heapprofile` 包含 V8 数据。
 
-The pull request workflow builds the base and head commits on one runner. Its comment leads with a compact workload comparison. Allocation values come from the sampled heap profiles. Module costs and current SSR hotspots stay collapsed until needed. CPU changes need 5% plus measured uncertainty. Memory changes need both 2.5% and 16 KiB. The artifact preserves both result sets, full caller paths, and all raw profiles.
+Pull request 工作流会在同一台 runner 上构建 base 和 head 提交。评论以紧凑的负载对比开头。分配值来自采样堆分析。模块成本和当前 SSR 热点默认折叠，需要时再展开。CPU 变化需要 5% 加上测量不确定性。内存变化需要同时满足 2.5% 和 16 KiB。产物会保留两套结果、完整调用路径和所有原始分析文件。

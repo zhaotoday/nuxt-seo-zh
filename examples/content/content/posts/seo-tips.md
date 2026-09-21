@@ -1,15 +1,15 @@
 ---
-title: SEO Tips for Nuxt Sites
-description: A short collection of SEO tips for content-driven Nuxt sites.
+title: Nuxt 站点的 SEO 技巧
+description: 面向内容驱动 Nuxt 站点的一组简短 SEO 技巧。
 date: 2026-05-17
 robots: index, follow
 ---
 
-# SEO Tips
+# SEO 技巧
 
-A few quick tips:
+几条快速建议：
 
-1. Set `site.url` in `nuxt.config.ts` so canonicals and sitemap entries are absolute.
-2. Use `useSeoMeta()`{lang="ts"} in pages for type-safe meta tags.
-3. Let `nuxt-og-image` auto-generate share images from your page metadata.
-4. Use frontmatter `sitemap`, `robots`, and `schemaOrg` for per-page overrides.
+1. 在 `nuxt.config.ts` 中设置 `site.url`，让 canonical 和站点地图条目使用绝对地址。
+2. 在页面中使用 `useSeoMeta()`{lang="ts"} 获得类型安全的 meta 标签。
+3. 让 `nuxt-og-image` 根据页面元数据自动生成分享图。
+4. 使用 frontmatter 的 `sitemap`、`robots` 和 `schemaOrg` 做按页覆盖。

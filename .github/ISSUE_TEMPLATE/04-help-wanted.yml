@@ -1,5 +1,5 @@
-name: 🆘 Help
-description: I need help with ...
+name: 🆘 帮助
+description: 我需要帮助……
 title: 'help: '
 labels: [help wanted]
 body:
@@ -7,14 +7,14 @@ body:
     validations:
       required: true
     attributes:
-      label: 📚 What are you trying to do?
-      description: A clear and concise description of your objective.
-      placeholder: I'm not sure how to [...].
+      label: 📚 你想做什么？
+      description: 清晰简洁地描述你的目标。
+      placeholder: 我不确定如何 [...]。
   - type: textarea
     attributes:
-      label: 🔍 What have you tried?
-      description: Have you looked through the docs? Tried different approaches? The more detail the better.
+      label: 🔍 你已经尝试过什么？
+      description: 你看过文档吗？试过不同方法吗？细节越多越好。
   - type: textarea
     attributes:
-      label: ℹ️ Additional context
-      description: Add any other context or information.
+      label: ℹ️ 补充上下文
+      description: 补充其他上下文或信息。

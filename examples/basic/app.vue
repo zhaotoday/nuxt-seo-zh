@@ -5,11 +5,11 @@
   <div>
     <nav>
       <NuxtLink to="/">
-        Home
+        首页
       </NuxtLink>
       |
       <NuxtLink to="/about">
-        About
+        关于
       </NuxtLink>
     </nav>
     <NuxtPage />

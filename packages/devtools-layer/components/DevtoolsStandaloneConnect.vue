@@ -17,7 +17,7 @@ async function connect() {
     standaloneUrl.value = url
   }
   catch {
-    error.value = `Could not reach ${url}. Is the dev server running?`
+    error.value = `无法访问 ${url}。开发服务器是否正在运行？`
   }
   finally {
     connecting.value = false
@@ -30,10 +30,10 @@ async function connect() {
     <div class="standalone-connect-card">
       <UIcon name="carbon:plug" class="text-4xl text-[var(--seo-green)]" />
       <h2 class="text-lg font-semibold">
-        Connect to Dev Server
+        连接到开发服务器
       </h2>
       <p class="text-sm text-[var(--color-text-muted)] text-center max-w-sm leading-relaxed">
-        Running in standalone mode. Enter the URL of your Nuxt dev server to start inspecting.
+        当前为独立模式。输入 Nuxt 开发服务器的 URL 开始检查。
       </p>
       <form class="standalone-connect-form" @submit.prevent="connect">
         <UInput
@@ -50,7 +50,7 @@ async function connect() {
           size="lg"
           :loading="connecting"
         >
-          Connect
+          连接
         </UButton>
       </form>
       <p v-if="error" class="text-xs text-[var(--color-warning)] text-center max-w-sm">

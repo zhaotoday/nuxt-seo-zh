@@ -1,23 +1,23 @@
 <!---
-☝️ PR title should follow conventional commits (https://conventionalcommits.org)
+☝️ PR 标题应遵循 conventional commits（https://conventionalcommits.org）
 -->
 
-### 🔗 Linked issue
+### 🔗 关联 issue
 
-<!-- If it resolves an open issue, please link the issue here. For example "Resolves #123" -->
+<!-- 如果解决了已有 issue，请在这里关联。例如 "Resolves #123" -->
 
-### ❓ Type of change
+### ❓ 变更类型
 
-<!-- What types of changes does your code introduce? Put an `x` in all the boxes that apply. -->
+<!-- 这次代码引入了哪些类型的变更？在所有适用的方框中打 `x`。 -->
 
-- [ ] 📖 Documentation (updates to the documentation or readme)
-- [ ] 🐞 Bug fix (a non-breaking change that fixes an issue)
-- [ ] 👌 Enhancement (improving an existing functionality)
-- [ ] ✨ New feature (a non-breaking change that adds functionality)
-- [ ] 🧹 Chore (updates to the build process or auxiliary tools and libraries)
-- [ ] ⚠️ Breaking change (fix or feature that would cause existing functionality to change)
+- [ ] 📖 文档（更新文档或 readme）
+- [ ] 🐞 缺陷修复（修复问题的非破坏性变更）
+- [ ] 👌 增强（改进现有功能）
+- [ ] ✨ 新功能（增加功能的非破坏性变更）
+- [ ] 🧹 杂务（更新构建流程或辅助工具和库）
+- [ ] ⚠️ 破坏性变更（会导致现有功能变化的修复或功能）
 
-### 📚 Description
+### 📚 说明
 
-<!-- Describe your changes in detail -->
-<!-- Why is this change required? What problem does it solve? -->
+<!-- 详细描述你的变更 -->
+<!-- 为什么需要这次变更？它解决了什么问题？ -->

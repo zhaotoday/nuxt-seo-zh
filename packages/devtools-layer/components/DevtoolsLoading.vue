@@ -5,7 +5,7 @@
       class="animate-spin text-3xl text-[var(--color-text-muted)]"
     />
     <p class="text-sm text-[var(--color-text-muted)]">
-      Connecting to devtools…
+      正在连接 DevTools…
     </p>
   </div>
 </template>

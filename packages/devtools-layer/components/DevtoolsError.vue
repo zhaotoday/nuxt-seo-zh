@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { icon = 'carbon:warning', title = 'Something went wrong' } = defineProps<{
+const { icon = 'carbon:warning', title = '出了点问题' } = defineProps<{
   icon?: string
   title?: string
   error?: string | Error | null

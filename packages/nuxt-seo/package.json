@@ -2,7 +2,7 @@
   "name": "@nuxtjs/seo",
   "type": "module",
   "version": "5.3.16",
-  "description": "Fully equipped Technical SEO for busy Nuxters.",
+  "description": "为忙碌的 Nuxt 开发者准备的完整技术 SEO 方案。",
   "author": {
     "name": "Harlan Wilton",
     "email": "harlan@harlanzw.com",

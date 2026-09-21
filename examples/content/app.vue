@@ -5,7 +5,7 @@
   <div>
     <nav>
       <NuxtLink to="/">
-        Home
+        首页
       </NuxtLink>
       |
       <NuxtLink to="/posts/hello-world">
@@ -13,7 +13,7 @@
       </NuxtLink>
       |
       <NuxtLink to="/posts/seo-tips">
-        SEO Tips
+        SEO 技巧
       </NuxtLink>
     </nav>
     <NuxtPage />

@@ -1,5 +1,5 @@
-name: 📚 Documentation
-description: How do I ... ?
+name: 📚 文档
+description: 我该如何……？
 title: 'docs: '
 labels: [documentation]
 body:
@@ -7,14 +7,14 @@ body:
     validations:
       required: true
     attributes:
-      label: 📚 Is your documentation request related to a problem?
-      description: A clear and concise description of what the problem is.
-      placeholder: I feel I should be able to [...] but I can't see how to do it from the docs.
+      label: 📚 你的文档请求是否与某个问题相关？
+      description: 清晰简洁地描述问题是什么。
+      placeholder: 我觉得我应该能 [...]，但文档里看不出该怎么做。
   - type: textarea
     attributes:
-      label: 🔍 Where should you find it?
-      description: What page of the docs do you expect this information to be found on?
+      label: 🔍 你期望在哪里找到它？
+      description: 你期望这段信息出现在文档的哪一页？
   - type: textarea
     attributes:
-      label: ℹ️ Additional context
-      description: Add any other context or information.
+      label: ℹ️ 补充上下文
+      description: 补充其他上下文或信息。
